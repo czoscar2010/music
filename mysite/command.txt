@@ -1,0 +1,10 @@
+nohup python manage.py runserver 0.0.0.0:8080 &
+
+
+django-admin startproject mysite
+
+python manage.py startapp polls
+
+
+python manage.py makemigrations music
+python manage.py migrate

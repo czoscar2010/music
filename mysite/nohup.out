@@ -1,0 +1,480 @@
+[20/Jan/2017 16:01:47] "GET / HTTP/1.1" 200 1767
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 20, 2017 - 16:01:40
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 20, 2017 - 16:44:02
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f26c7f9d0c8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/mysite/urls.py", line 6
+    url(r'^admin/', admin.site.urls),
+      ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 20, 2017 - 16:49:47
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7ff40bdbf0c8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/mysite/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/music/urls.py", line 6, in <module>
+    url(r'^$', views.index, name='index'),
+AttributeError: 'module' object has no attribute 'index'
+Unhandled exception in thread started by <function wrapper at 0x7f4a2c1e00c8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/mysite/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/music/urls.py", line 6, in <module>
+    url(r'^$', views.index, name='index'),
+AttributeError: 'module' object has no attribute 'index'
+[20/Jan/2017 16:58:39] "GET /music HTTP/1.1" 301 0
+[20/Jan/2017 16:58:39] "GET /music/ HTTP/1.1" 200 35
+[20/Jan/2017 17:03:38] "GET /music/ HTTP/1.1" 200 35
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 20, 2017 - 16:58:19
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Jan/2017 17:56:36] "GET /admin HTTP/1.1" 301 0
+[20/Jan/2017 17:56:36] "GET /admin/ HTTP/1.1" 302 0
+[20/Jan/2017 17:56:36] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1653
+[20/Jan/2017 17:56:36] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[20/Jan/2017 17:56:36] "GET /static/admin/css/base.css HTTP/1.1" 200 15937
+[20/Jan/2017 17:56:36] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[20/Jan/2017 17:56:36] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[20/Jan/2017 17:56:36] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[20/Jan/2017 17:56:43] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[20/Jan/2017 17:56:43] "GET /admin/ HTTP/1.1" 200 2779
+[20/Jan/2017 17:56:43] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 434
+[20/Jan/2017 17:56:43] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[20/Jan/2017 17:56:43] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[20/Jan/2017 17:56:43] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 17:50:12
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Jan/2017 17:59:05] "GET /admin/ HTTP/1.1" 200 3794
+[20/Jan/2017 17:59:16] "GET /admin/music/album/add/ HTTP/1.1" 200 5308
+[20/Jan/2017 17:59:16] "GET /static/admin/css/forms.css HTTP/1.1" 200 7750
+[20/Jan/2017 17:59:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[20/Jan/2017 17:59:16] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[20/Jan/2017 17:59:16] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[20/Jan/2017 17:59:16] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[20/Jan/2017 17:59:16] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[20/Jan/2017 17:59:16] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[20/Jan/2017 17:59:16] "GET /static/admin/js/change_form.js HTTP/1.1" 200 698
+[20/Jan/2017 17:59:16] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[20/Jan/2017 17:59:16] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[20/Jan/2017 17:59:16] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6577
+[20/Jan/2017 17:59:16] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[20/Jan/2017 17:59:16] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[20/Jan/2017 18:00:35] "POST /admin/music/album/add/ HTTP/1.1" 302 0
+[20/Jan/2017 18:00:35] "GET /admin/music/album/ HTTP/1.1" 200 4362
+[20/Jan/2017 18:00:35] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6117
+[20/Jan/2017 18:00:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[20/Jan/2017 18:00:35] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[20/Jan/2017 18:00:35] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[20/Jan/2017 18:00:37] "GET /admin/music/album/add/ HTTP/1.1" 200 5308
+[20/Jan/2017 18:00:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[20/Jan/2017 18:01:33] "POST /admin/music/album/add/ HTTP/1.1" 302 0
+[20/Jan/2017 18:01:33] "GET /admin/music/album/ HTTP/1.1" 200 4596
+[20/Jan/2017 18:01:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 17:58:54
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f8e43e74500>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/mysite/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/music/urls.py", line 8, in <module>
+    url(r'^(?P<album_id>[0-9]+)/$',views.detail, name='detail'),
+AttributeError: 'module' object has no attribute 'detail'
+[20/Jan/2017 18:08:02] "GET /music/ HTTP/1.1" 200 35
+[20/Jan/2017 18:08:04] "GET /music/1 HTTP/1.1" 301 0
+[20/Jan/2017 18:08:04] "GET /music/1/ HTTP/1.1" 200 32
+[20/Jan/2017 18:08:08] "GET /music/2/ HTTP/1.1" 200 32
+[20/Jan/2017 18:08:32] "GET /music/433 HTTP/1.1" 301 0
+[20/Jan/2017 18:08:32] "GET /music/433/ HTTP/1.1" 200 34
+[20/Jan/2017 18:09:07] "GET /music/ HTTP/1.1" 200 35
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 18:06:38
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Jan/2017 18:15:46] "GET /music/ HTTP/1.1" 200 61
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 18:15:42
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Jan/2017 18:20:02] "GET /music/ HTTP/1.1" 200 61
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 18:19:59
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Jan/2017 18:20:22] "GET /music/ HTTP/1.1" 200 61
+[20/Jan/2017 18:20:25] "GET /music/1/ HTTP/1.1" 200 32
+[20/Jan/2017 18:20:28] "GET /music/1/ HTTP/1.1" 200 32
+[20/Jan/2017 18:20:28] "GET /music/ HTTP/1.1" 200 61
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 18:20:21
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Jan/2017 18:20:56] "GET /music/ HTTP/1.1" 200 63
+[20/Jan/2017 18:20:57] "GET /music/1/ HTTP/1.1" 200 32
+[20/Jan/2017 18:20:59] "GET /music/2/ HTTP/1.1" 200 32
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 18:20:54
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 18:40:52
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 18:46:34
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Internal Server Error: /music/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vagrant/project/mysite/music/views.py", line 8, in index
+    template = loader.get_template('music/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: music/index.html
+[20/Jan/2017 18:48:27] "GET /music/ HTTP/1.1" 500 68950
+Internal Server Error: /music/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vagrant/project/mysite/music/views.py", line 8, in index
+    template = loader.get_template('music/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: music/index.html
+[20/Jan/2017 18:49:20] "GET /music/ HTTP/1.1" 500 68950
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 20, 2017 - 18:46:52
+Django version 1.10.5, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 367, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 359, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 306, in run_from_argv
+    connections.close_all()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 229, in close_all
+    for alias in self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 223, in __iter__
+    return iter(self.databases)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 156, in databases
+    self._databases = settings.DATABASES
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 53, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 41, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 111, in __init__
+    raise ImproperlyConfigured("The %s setting must be a list or a tuple. " % setting)
+django.core.exceptions.ImproperlyConfigured: The TEMPLATE_DIRS setting must be a list or a tuple. 
+[20/Jan/2017 18:59:47] "GET /music HTTP/1.1" 301 0
+[20/Jan/2017 18:59:47] "GET /music/ HTTP/1.1" 200 106
+Internal Server Error: /music/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vagrant/project/mysite/music/views.py", line 8, in index
+    template = loader.get_template('music/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Could not parse the remainder: '% endif %' from '% endif %'
+[20/Jan/2017 19:00:52] "GET /music/ HTTP/1.1" 500 101364
+[20/Jan/2017 19:01:27] "GET /music/ HTTP/1.1" 200 106
+[20/Jan/2017 19:01:29] "GET /music/1/ HTTP/1.1" 200 32
+[20/Jan/2017 19:01:31] "GET /music/2/ HTTP/1.1" 200 32
+Unhandled exception in thread started by <function wrapper at 0x7f0fc83a7488>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/mysite/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/music/urls.py", line 3, in <module>
+    from . import views
+  File "/home/vagrant/project/mysite/music/views.py", line 11
+    return render(request, 'music/index.html' ,context,request))
+                                                               ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x7f851ac7f488>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/mysite/urls.py", line 6, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/vagrant/project/mysite/music/urls.py", line 3, in <module>
+    from . import views
+  File "/home/vagrant/project/mysite/music/views.py", line 11
+    return render(request, 'music/index.html' ,context,request))
+                                                               ^
+SyntaxError: invalid syntax
+Error: That port is already in use.
+Error: That port is already in use.
