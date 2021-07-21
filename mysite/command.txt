@@ -1,3 +1,7 @@
+Cd 到指定文件夹下 然后运行
+sudo python setup.py install 指令
+
+
 nohup python manage.py runserver 0.0.0.0:8080 &
 
 
